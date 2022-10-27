@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Strata plans</h1>
+
+<div id="strata_plans">
+  <% @strata_plans.each do |strata_plan| %>
+    <%= render strata_plan %>
+    <p>
+      <%= link_to "Show this strata plan", strata_plan %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New strata plan", new_strata_plan_path %>
