@@ -15,5 +15,16 @@ strata_plan = StrataPlan.where(name: "StrataPlan123").first_or_create!
 residential_unit = ResidentialUnit.where(strata_plan: strata_plan, name: "101").first_or_create!
 resident = Resident.where(user: user, residential_unit: residential_unit).first_or_create!
 admin = StrataAdmin.where(strata_plan: strata_plan, user: user, role: :caretaker).first_or_create!
+chat_room = ChatRoom.where(name: "Chat", strata_plan_id: strata_plan.id,
+                           creator_id: user.id).first_or_create!
+ChatMessage.where(author: user, chat_room:
+  chat_room).first_or_create! do |m|
+  m.content = "Hello, World!"
+end
+
+Issue.where(reporter: user, strata_plan:
+  strata_plan).first_or_create! do |i|
+  i.content = 'parking pipes leaking'
+end
 
 user.confirm

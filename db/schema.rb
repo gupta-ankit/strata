@@ -62,10 +62,13 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_30_013635) do
   end
 
   create_table "chat_rooms", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
+    t.string "name"
     t.uuid "creator_id", null: false
+    t.uuid "strata_plan_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["creator_id"], name: "index_chat_rooms_on_creator_id"
+    t.index ["strata_plan_id"], name: "index_chat_rooms_on_strata_plan_id"
   end
 
   create_table "issues", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
@@ -141,6 +144,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_30_013635) do
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
   add_foreign_key "chat_messages", "chat_rooms"
   add_foreign_key "chat_messages", "users", column: "author_id"
+  add_foreign_key "chat_rooms", "strata_plans"
   add_foreign_key "chat_rooms", "users", column: "creator_id"
   add_foreign_key "issues", "strata_plans"
   add_foreign_key "issues", "users", column: "reporter_id"

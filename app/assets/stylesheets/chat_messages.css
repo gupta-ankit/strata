@@ -1,0 +1,19 @@
+.chatbox {
+    border: thin red solid;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    max-height: calc(100vh - 60px);
+}
+
+.chatbox .window {
+    flex: auto;
+    overflow: auto;
+    max-height: calc(100% - 60px);
+}
+
+.chatbox trix-editor {
+    min-height: 1em;
+    max-height: 3em;
+    overflow: auto;
+}

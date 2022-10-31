@@ -3,8 +3,12 @@
 <%= render @strata_plan %>
 
 <div>
-  <%= link_to "Edit this strata plan", edit_strata_plan_path(@strata_plan) %> |
-  <%= link_to "Back to strata plans", strata_plans_path %>
+  <b>Chats</b><br/>
+  <% @chat_rooms.each do |cr| %>
+    <%= link_to cr.name, [@strata_plan, cr] %>
+  <% end %>
+</div>
 
-  <%= button_to "Destroy this strata plan", @strata_plan, method: :delete %>
+<div>
+  <b><%= link_to "Issues", strata_plan_issues_url(@strata_plan) %></b><br/>
 </div>

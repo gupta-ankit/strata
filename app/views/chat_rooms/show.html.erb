@@ -1,0 +1,16 @@
+<div class="chatbox">
+  <h3><%= @chat_room.name %></h3>
+  <div class="window">
+    <% @chat_room.chat_messages.each do |cm| %>
+      <%= cm.content %>
+    <% end %>
+  </div>
+  <div class="new-message">
+    <%= form_with model: @new_message do |f| %>
+      <%= f.rich_text_area :content %>
+      <%= f.hidden_field :chat_room_id %>
+      <%= f.submit %>
+    <% end %>
+  </div>
+</div>
+

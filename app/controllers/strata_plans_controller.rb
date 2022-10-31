@@ -3,6 +3,7 @@ class StrataPlansController < ApplicationController
 
   # GET /strata_plans/1 or /strata_plans/1.json
   def show
+    @chat_rooms = @strata_plan.chat_rooms
   end
 
   # GET /strata_plans/new
