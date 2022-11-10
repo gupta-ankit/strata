@@ -1,0 +1,9 @@
+<%= form_with model: [@strata_plan, @issue] do |f| %>
+  <div>
+    <%= f.rich_text_area :content %>
+  </div>
+  <div>
+    <%= f.file_field :images, multiple: true %>
+  </div>
+  <%= f.submit %>
+<% end %>

@@ -1,4 +1,5 @@
 <b>Issues</b>
+<%= link_to "New Issue", new_strata_plan_issue_path(@strata_plan) %>
 <% @issues.each do |is| %>
   <div class="issue-link">
     <%= link_to truncate(is.content.to_plain_text, length: 15),
