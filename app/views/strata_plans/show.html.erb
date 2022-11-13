@@ -1,14 +1,3 @@
 <p style="color: green"><%= notice %></p>
 
 <%= render @strata_plan %>
-
-<div>
-  <b>Chats</b><br/>
-  <% @chat_rooms.each do |cr| %>
-    <%= link_to cr.name, [@strata_plan, cr] %>
-  <% end %>
-</div>
-
-<div>
-  <b><%= link_to "Issues", strata_plan_issues_url(@strata_plan) %></b><br/>
-</div>

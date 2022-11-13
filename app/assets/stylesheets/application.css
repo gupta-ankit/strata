@@ -17,3 +17,24 @@
 trix-toolbar {
     display: none;
 }
+
+img.image {
+    height: 100px;
+}
+
+.main-menu {
+    background-color: black;
+}
+
+.main-menu nav {
+    background-color: black;
+}
+
+.main-menu nav * {
+    background-color: black;
+    color: whitesmoke;
+}
+
+.main-menu button {
+    padding-left: 0;
+}
