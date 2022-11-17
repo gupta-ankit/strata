@@ -56,6 +56,7 @@ class StrataPlansController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_strata_plan
       @strata_plan = current_user.strata_plans.find(params[:id])
+      @chat_rooms = @strata_plan.chat_rooms
     end
 
     # Only allow a list of trusted parameters through.

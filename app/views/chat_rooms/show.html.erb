@@ -9,7 +9,7 @@
     <%= form_with model: @new_message do |f| %>
       <%= f.rich_text_area :content %>
       <%= f.hidden_field :chat_room_id %>
-      <%= f.submit %>
+      <%= f.submit "Send" %>
     <% end %>
   </div>
 </div>

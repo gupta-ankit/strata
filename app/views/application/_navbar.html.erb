@@ -1,66 +1,19 @@
-<nav class="flex-shrink-0 p-3">
-  <a href="/" class="d-flex align-items-center pb-3 mb-3 text-decoration-none border-bottom">
-    <span class="fs-5 fw-semibold">Strata</span>
-  </a>
-  <ul class="list-unstyled ps-0">
-    <!--
-    <li class="mb-1">
-      <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
-        Home
-      </button>
-      <div class="collapse" id="home-collapse">
-        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-          <li><a href="#" class="rounded">Overview</a></li>
-          <li><a href="#" class="rounded">Updates</a></li>
-          <li><a href="#" class="rounded">Reports</a></li>
-        </ul>
-      </div>
-    </li>
-    <li class="mb-1">
-      <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="false">
-        Dashboard
-      </button>
-      <div class="collapse" id="dashboard-collapse">
-        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-          <li><a href="#" class="rounded">Overview</a></li>
-          <li><a href="#" class="rounded">Weekly</a></li>
-          <li><a href="#" class="rounded">Monthly</a></li>
-          <li><a href="#" class="rounded">Annually</a></li>
-        </ul>
-      </div>
-    </li>
-    <li class="mb-1">
-      <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
-        Orders
-      </button>
-      <div class="collapse" id="orders-collapse">
-        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-          <li><a href="#" class="rounded">New</a></li>
-          <li><a href="#" class="rounded">Processed</a></li>
-          <li><a href="#" class="rounded">Shipped</a></li>
-          <li><a href="#" class="rounded">Returned</a></li>
-        </ul>
-      </div>
-    </li>
-    <li class="border-top my-3"></li>
-    -->
-    <li class="mb-1">
-      <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#chats-collapse" aria-expanded="true">
-        Chat
-      </button>
-      <div class="collapse show" id="chats-collapse">
-        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-          <% @chat_rooms.each do |cr| %>
-            <li><%= link_to cr.name, [@strata_plan, cr] %></li>
-          <% end %>
-        </ul>
-      </div>
-    </li>
-    <li class="mb-1">
-      <%= link_to "Issues", strata_plan_issues_url(@strata_plan) %>
-    </li>
-    <li class="mb-1">
-      <%= button_to "Sign out", destroy_user_session_path, method: :delete %>
+<div class="vertical-nav bg-white" id="sidebar">
+  <div class="py-4 px-3 mb-4 bg-light">
+    <h4>Strata</h4>
+  </div>
+  <ul class="nav flex-column bg-white mb-0">
+    <li class="nav-item">
+      <%= link_to strata_plan_issues_url(@strata_plan), class: "nav-link text-dark font-italic" do %>
+        <i class="fa fa-th-large mr-3 text-primary fa-fw"></i> Issues
+      <% end %>
     </li>
   </ul>
-</nav>
+
+  <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">Chats</p>
+  <ul class="nav flex-column bg-white mb-0">
+    <% @chat_rooms.each do |cr| %>
+      <li><%= link_to cr.name, [@strata_plan, cr], class: "nav-link text-dark font-italic" %></li>
+    <% end %>
+  </ul>
+</div>
