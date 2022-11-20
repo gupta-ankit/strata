@@ -2,7 +2,13 @@
   <h3><%= @chat_room.name %></h3>
   <div class="window">
     <% @chat_room.chat_messages.each do |cm| %>
-      <%= cm.content %>
+      <% css = "author-me" if cm.author == current_user %>
+      <%= content_tag(:div, class: css) do %>
+        <%= cm.content %>
+      <% end %>
+      <%= content_tag :div, class: "author-name" do %>
+        <%= cm.author.email %>
+      <% end %>
     <% end %>
   </div>
   <div class="new-message">

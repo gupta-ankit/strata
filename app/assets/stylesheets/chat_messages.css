@@ -16,3 +16,7 @@
     max-height: 3em;
     overflow: auto;
 }
+
+.chatbox .author-me {
+    text-align: right;
+}

@@ -6,14 +6,18 @@
     <li class="nav-item">
       <%= link_to strata_plan_issues_url(@strata_plan), class: "nav-link text-dark font-italic" do %>
         <i class="fa fa-th-large mr-3 text-primary fa-fw"></i> Issues
-      <% end %>
+      <% end if @strata_plan %>
     </li>
   </ul>
 
   <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">Chats</p>
   <ul class="nav flex-column bg-white mb-0">
-    <% @chat_rooms.each do |cr| %>
+    <% @chat_rooms&.each do |cr| %>
       <li><%= link_to cr.name, [@strata_plan, cr], class: "nav-link text-dark font-italic" %></li>
     <% end %>
+  </ul>
+
+  <ul class="nav flex-column bg-white mb-0">
+    <li><%= button_to "Sign out", destroy_user_session_path, method: :delete, class: "nav-link text-dark font-italic" %></li>
   </ul>
 </div>
