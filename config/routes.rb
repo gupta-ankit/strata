@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :strata_plans do
     resources :chat_rooms
     resources :issues
+    resources :residents, only: [:index, :new, :create]
   end
   devise_for :users, controllers: {
     sessions: 'users/sessions',

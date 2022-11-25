@@ -3,11 +3,17 @@
     <h4>Strata</h4>
   </div>
   <ul class="nav flex-column bg-white mb-0">
-    <li class="nav-item">
-      <%= link_to strata_plan_issues_url(@strata_plan), class: "nav-link text-dark font-italic" do %>
-        <i class="fa fa-th-large mr-3 text-primary fa-fw"></i> Issues
-      <% end if @strata_plan %>
-    </li>
+    <% if @strata_plan %>
+      <li class="nav-item">
+        <%= link_to strata_plan_issues_url(@strata_plan), class: "nav-link text-dark font-italic" do %>
+          <i class="fa fa-th-large mr-3 text-primary fa-fw"></i> Issues
+        <% end %>
+      </li>
+
+      <li class="nav-item">
+        <%= link_to "Residents", strata_plan_residents_url(@strata_plan), class: 'nav-link text-dark font-italic' %>
+      </li>
+    <% end %>
   </ul>
 
   <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">Chats</p>

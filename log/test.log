@@ -575,3 +575,832 @@ Content-Transfer-Encoding: 7bit
   [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
   [1m[36mStrataPlan Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "strata_plans" INNER JOIN "residential_units" ON "residential_units"."strata_plan_id" = "strata_plans"."id" INNER JOIN "residents" ON "residents"."residential_unit_id" = "residential_units"."id" INNER JOIN "users" ON "users"."id" = "residents"."user_id" WHERE "residents"."user_id" = ? AND "strata_plans"."id" = ? LIMIT ?[0m  [["user_id", "b25cb822-9190-4938-ab3d-a4f0714ff39a"], ["id", "be4867f6-9613-418f-9237-1497635cc896"], ["LIMIT", 1]]
   [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/home/index" for 127.0.0.1 at 2022-11-25 06:34:41 +0000
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/residents/index" for 127.0.0.1 at 2022-11-25 06:34:41 +0000
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/residents/new" for 127.0.0.1 at 2022-11-25 06:34:41 +0000
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/residents/create" for 127.0.0.1 at 2022-11-25 06:34:41 +0000
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/strata_plans/new" for 127.0.0.1 at 2022-11-25 06:34:41 +0000
+Processing by StrataPlansController#new as HTML
+Completed 401 Unauthorized in 114ms (ActiveRecord: 0.0ms | Allocations: 2646)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (27.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (15.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateUsers (20221011055815)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (7.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" uuid NOT NULL PRIMARY KEY, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime(6), "remember_created_at" datetime(6), "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime(6), "last_sign_in_at" datetime(6), "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "confirmation_token" varchar, "confirmed_at" datetime(6), "confirmation_sent_at" datetime(6), "unconfirmed_email" varchar, "failed_attempts" integer DEFAULT 0 NOT NULL, "unlock_token" varchar, "locked_at" datetime(6), "name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (2.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221011055815"]]
+  [1m[36mTRANSACTION (11.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateStrataPlans (20221011064826)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE TABLE "strata_plans" ("id" uuid NOT NULL PRIMARY KEY, "name" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221011064826"]]
+  [1m[36mTRANSACTION (49.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateResidentialUnits (20221011064916)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (37.8ms)[0m  [1m[35mCREATE TABLE "residential_units" ("id" uuid NOT NULL PRIMARY KEY, "name" varchar, "strata_plan_id" uuid NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_bcecf1ee58"
+FOREIGN KEY ("strata_plan_id")
+  REFERENCES "strata_plans" ("id")
+)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_residential_units_on_strata_plan_id" ON "residential_units" ("strata_plan_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (2.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221011064916"]]
+  [1m[36mTRANSACTION (38.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateResidents (20221011065008)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (9.0ms)[0m  [1m[35mCREATE TABLE "residents" ("id" uuid NOT NULL PRIMARY KEY, "user_id" uuid NOT NULL, "residential_unit_id" uuid NOT NULL, "start_date" datetime(6), "end_date" datetime(6), "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_1144be7be2"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_e44a90e31a"
+FOREIGN KEY ("residential_unit_id")
+  REFERENCES "residential_units" ("id")
+)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE INDEX "index_residents_on_user_id" ON "residents" ("user_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_residents_on_residential_unit_id" ON "residents" ("residential_unit_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (2.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221011065008"]]
+  [1m[36mTRANSACTION (12.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateStrataAdmins (20221011065415)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (22.4ms)[0m  [1m[35mCREATE TABLE "strata_admins" ("id" uuid NOT NULL PRIMARY KEY, "strata_plan_id" uuid NOT NULL, "user_id" uuid NOT NULL, "role" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_32d9255af1"
+FOREIGN KEY ("strata_plan_id")
+  REFERENCES "strata_plans" ("id")
+, CONSTRAINT "fk_rails_0c0fc4ad3d"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE INDEX "index_strata_admins_on_strata_plan_id" ON "strata_admins" ("strata_plan_id")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_strata_admins_on_user_id" ON "strata_admins" ("user_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (4.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221011065415"]]
+  [1m[36mTRANSACTION (34.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateIssues (20221030012046)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE TABLE "issues" ("id" uuid NOT NULL PRIMARY KEY, "strata_plan_id" uuid NOT NULL, "reporter_id" uuid NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_49a6f241a7"
+FOREIGN KEY ("strata_plan_id")
+  REFERENCES "strata_plans" ("id")
+, CONSTRAINT "fk_rails_e760f5afbf"
+FOREIGN KEY ("reporter_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_issues_on_strata_plan_id" ON "issues" ("strata_plan_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_issues_on_reporter_id" ON "issues" ("reporter_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221030012046"]]
+  [1m[36mTRANSACTION (11.5ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateChatRooms (20221030012412)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (7.0ms)[0m  [1m[35mCREATE TABLE "chat_rooms" ("id" uuid NOT NULL PRIMARY KEY, "name" varchar, "creator_id" uuid NOT NULL, "strata_plan_id" uuid NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_384186a59a"
+FOREIGN KEY ("creator_id")
+  REFERENCES "users" ("id")
+, CONSTRAINT "fk_rails_6de0cacd60"
+FOREIGN KEY ("strata_plan_id")
+  REFERENCES "strata_plans" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_chat_rooms_on_creator_id" ON "chat_rooms" ("creator_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_chat_rooms_on_strata_plan_id" ON "chat_rooms" ("strata_plan_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221030012412"]]
+  [1m[36mTRANSACTION (9.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateChatMessages (20221030013549)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (6.1ms)[0m  [1m[35mCREATE TABLE "chat_messages" ("id" uuid NOT NULL PRIMARY KEY, "chat_room_id" uuid NOT NULL, "author_id" uuid NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_3070841b05"
+FOREIGN KEY ("chat_room_id")
+  REFERENCES "chat_rooms" ("id")
+, CONSTRAINT "fk_rails_d688adc904"
+FOREIGN KEY ("author_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "index_chat_messages_on_chat_room_id" ON "chat_messages" ("chat_room_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_chat_messages_on_author_id" ON "chat_messages" ("author_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221030013549"]]
+  [1m[36mTRANSACTION (12.0ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateActiveStorageTables (20221030013634)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (14.4ms)[0m  [1m[35mCREATE TABLE "active_storage_blobs" ("id" uuid NOT NULL PRIMARY KEY, "key" varchar NOT NULL, "filename" varchar NOT NULL, "content_type" varchar, "metadata" text, "service_name" varchar NOT NULL, "byte_size" bigint NOT NULL, "checksum" varchar, "created_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_blobs_on_key" ON "active_storage_blobs" ("key")[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "active_storage_attachments" ("id" uuid NOT NULL PRIMARY KEY, "name" varchar NOT NULL, "record_type" varchar NOT NULL, "record_id" uuid NOT NULL, "blob_id" uuid NOT NULL, "created_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_c3b3935057"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_active_storage_attachments_on_blob_id" ON "active_storage_attachments" ("blob_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_attachments_uniqueness" ON "active_storage_attachments" ("record_type", "record_id", "name", "blob_id")[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "active_storage_variant_records" ("id" uuid NOT NULL PRIMARY KEY, "blob_id" uuid NOT NULL, "variation_digest" varchar NOT NULL, CONSTRAINT "fk_rails_993965df05"
+FOREIGN KEY ("blob_id")
+  REFERENCES "active_storage_blobs" ("id")
+)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_active_storage_variant_records_uniqueness" ON "active_storage_variant_records" ("blob_id", "variation_digest")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (4.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221030013634"]]
+  [1m[36mTRANSACTION (17.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateActionTextTables (20221030013635)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (21.0ms)[0m  [1m[35mCREATE TABLE "action_text_rich_texts" ("id" uuid NOT NULL PRIMARY KEY, "name" varchar NOT NULL, "body" text, "record_type" varchar NOT NULL, "record_id" uuid NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_action_text_rich_texts_uniqueness" ON "action_text_rich_texts" ("record_type", "record_id", "name")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (2.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20221030013635"]]
+  [1m[36mTRANSACTION (23.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (10.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (16.8ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "test"], ["created_at", "2022-11-25 06:36:18.956907"], ["updated_at", "2022-11-25 06:36:18.956907"]]
+  [1m[36mTRANSACTION (11.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStrataPlan Create (34.9ms)[0m  [1m[32mINSERT INTO "strata_plans" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", "0b1401fc-7342-4ac3-842d-ef77bee81f53"], ["name", "MyString"], ["created_at", "2022-11-25 06:37:02.925680"], ["updated_at", "2022-11-25 06:37:02.925680"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "1@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (26.2ms)[0m  [1m[32mINSERT INTO "users" ("id", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "sign_in_count", "current_sign_in_at", "last_sign_in_at", "current_sign_in_ip", "last_sign_in_ip", "confirmation_token", "confirmed_at", "confirmation_sent_at", "unconfirmed_email", "failed_attempts", "unlock_token", "locked_at", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["id", "c993ccae-4afd-4d0a-82f5-d4999931b141"], ["email", "1@example.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["sign_in_count", 0], ["current_sign_in_at", nil], ["last_sign_in_at", nil], ["current_sign_in_ip", nil], ["last_sign_in_ip", nil], ["confirmation_token", "[FILTERED]"], ["confirmed_at", nil], ["confirmation_sent_at", "2022-11-25 06:37:03.168559"], ["unconfirmed_email", nil], ["failed_attempts", 0], ["unlock_token", "[FILTERED]"], ["locked_at", nil], ["name", nil], ["created_at", "2022-11-25 06:37:03.168327"], ["updated_at", "2022-11-25 06:37:03.168327"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (Duration: 60.1ms | Allocations: 944)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 573.8ms
+Delivered mail 6380629016f8d_91518579df@2f730d08f068.mail (79.6ms)
+Date: Fri, 25 Nov 2022 06:37:04 +0000
+From: noreply@strata.herokuapp.com
+Reply-To: noreply@strata.herokuapp.com
+To: 1@example.com
+Message-ID: <6380629016f8d_91518579df@2f730d08f068.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome 1@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=fMy37n5GwqzNNWjUQWcL">Confirm my account</a></p>
+
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mResidentialUnit Create (5.5ms)[0m  [1m[32mINSERT INTO "residential_units" ("id", "name", "strata_plan_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["id", "0a2f6373-d9b0-4f54-924b-72b176bd64b9"], ["name", "MyString"], ["strata_plan_id", "0b1401fc-7342-4ac3-842d-ef77bee81f53"], ["created_at", "2022-11-25 06:37:04.211038"], ["updated_at", "2022-11-25 06:37:04.211038"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mResident Create (4.4ms)[0m  [1m[32mINSERT INTO "residents" ("id", "user_id", "residential_unit_id", "start_date", "end_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["id", "12d26dcd-3d7d-49f7-a920-2cab4f6dd672"], ["user_id", "c993ccae-4afd-4d0a-82f5-d4999931b141"], ["residential_unit_id", "0a2f6373-d9b0-4f54-924b-72b176bd64b9"], ["start_date", "2022-10-10 23:50:08"], ["end_date", "2022-10-10 23:50:08"], ["created_at", "2022-11-25 06:37:04.226196"], ["updated_at", "2022-11-25 06:37:04.226196"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mStrataPlan Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "strata_plans" INNER JOIN "residential_units" ON "residential_units"."strata_plan_id" = "strata_plans"."id" INNER JOIN "residents" ON "residents"."residential_unit_id" = "residential_units"."id" INNER JOIN "users" ON "users"."id" = "residents"."user_id" WHERE "residents"."user_id" = ? AND "strata_plans"."id" = ? LIMIT ?[0m  [["user_id", "c993ccae-4afd-4d0a-82f5-d4999931b141"], ["id", "0b1401fc-7342-4ac3-842d-ef77bee81f53"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (43.8ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/home/index" for 127.0.0.1 at 2022-11-25 06:37:04 +0000
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/residents/index" for 127.0.0.1 at 2022-11-25 06:37:04 +0000
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/residents/new" for 127.0.0.1 at 2022-11-25 06:37:04 +0000
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/residents/create" for 127.0.0.1 at 2022-11-25 06:37:04 +0000
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/strata_plans/new" for 127.0.0.1 at 2022-11-25 06:37:04 +0000
+Processing by StrataPlansController#new as HTML
+Completed 401 Unauthorized in 127ms (ActiveRecord: 0.0ms | Allocations: 1348)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStrataPlan Count (3.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "strata_plans"[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStrataPlan Count (3.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "strata_plans"[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStrataPlan Create (6.2ms)[0m  [1m[32mINSERT INTO "strata_plans" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", "0415ef80-8a33-4599-822a-659abf6c4b51"], ["name", nil], ["created_at", "2022-11-25 06:37:04.848891"], ["updated_at", "2022-11-25 06:37:04.848891"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering strata_plans/edit.html.erb
+  Rendered strata_plans/_form.html.erb (Duration: 34.5ms | Allocations: 891)
+  Rendered strata_plans/edit.html.erb (Duration: 99.0ms | Allocations: 1444)
+  [1m[36mTRANSACTION (20.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStrataPlan Create (9.4ms)[0m  [1m[32mINSERT INTO "strata_plans" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", "f33b82fc-ab12-4ae1-9cbc-9cf710ebeab0"], ["name", nil], ["created_at", "2022-11-25 06:37:05.011731"], ["updated_at", "2022-11-25 06:37:05.011731"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStrataPlan Create (0.1ms)[0m  [1m[32mINSERT INTO "strata_plans" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", "84950e2e-400a-4e27-b769-256a142ae336"], ["name", nil], ["created_at", "2022-11-25 06:37:05.027582"], ["updated_at", "2022-11-25 06:37:05.027582"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering strata_plans/index.html.erb
+  Rendered strata_plans/_strata_plan.html.erb (Duration: 20.5ms | Allocations: 172)
+  Rendered strata_plans/_strata_plan.html.erb (Duration: 0.0ms | Allocations: 11)
+  Rendered strata_plans/index.html.erb (Duration: 61.5ms | Allocations: 1087)
+  [1m[36mTRANSACTION (7.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  Rendering strata_plans/new.html.erb
+  Rendered strata_plans/_form.html.erb (Duration: 3.9ms | Allocations: 419)
+  Rendered strata_plans/new.html.erb (Duration: 55.8ms | Allocations: 702)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStrataPlan Create (7.2ms)[0m  [1m[32mINSERT INTO "strata_plans" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", "df171e09-1e97-4102-9433-3970b1513db8"], ["name", nil], ["created_at", "2022-11-25 06:37:05.282770"], ["updated_at", "2022-11-25 06:37:05.282770"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering strata_plans/show.html.erb
+  Rendered strata_plans/_strata_plan.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered strata_plans/show.html.erb (Duration: 28.0ms | Allocations: 280)
+  [1m[36mTRANSACTION (5.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStrataPlan Create (5.9ms)[0m  [1m[32mINSERT INTO "strata_plans" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", "063da41b-95c1-4c5a-ab8c-bf91a16e07d6"], ["name", "MyString"], ["created_at", "2022-11-25 06:38:08.274474"], ["updated_at", "2022-11-25 06:38:08.274474"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "1@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (7.6ms)[0m  [1m[32mINSERT INTO "users" ("id", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "sign_in_count", "current_sign_in_at", "last_sign_in_at", "current_sign_in_ip", "last_sign_in_ip", "confirmation_token", "confirmed_at", "confirmation_sent_at", "unconfirmed_email", "failed_attempts", "unlock_token", "locked_at", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["id", "1989d138-3ab0-44c9-a7ee-cd7ba31c58a4"], ["email", "1@example.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["sign_in_count", 0], ["current_sign_in_at", nil], ["last_sign_in_at", nil], ["current_sign_in_ip", nil], ["last_sign_in_ip", nil], ["confirmation_token", "[FILTERED]"], ["confirmed_at", nil], ["confirmation_sent_at", "2022-11-25 06:38:08.483963"], ["unconfirmed_email", nil], ["failed_attempts", 0], ["unlock_token", "[FILTERED]"], ["locked_at", nil], ["name", nil], ["created_at", "2022-11-25 06:38:08.483680"], ["updated_at", "2022-11-25 06:38:08.483680"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (Duration: 23.3ms | Allocations: 944)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 469.4ms
+Delivered mail 638062d15af9c_9151876520@939975a24e8e.mail (31.7ms)
+Date: Fri, 25 Nov 2022 06:38:09 +0000
+From: noreply@strata.herokuapp.com
+Reply-To: noreply@strata.herokuapp.com
+To: 1@example.com
+Message-ID: <638062d15af9c_9151876520@939975a24e8e.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome 1@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=j2EBosbzViUyXfPiHt1_">Confirm my account</a></p>
+
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mResidentialUnit Create (3.7ms)[0m  [1m[32mINSERT INTO "residential_units" ("id", "name", "strata_plan_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["id", "26aa5516-9334-493a-83c0-14b923abafeb"], ["name", "MyString"], ["strata_plan_id", "063da41b-95c1-4c5a-ab8c-bf91a16e07d6"], ["created_at", "2022-11-25 06:38:09.482933"], ["updated_at", "2022-11-25 06:38:09.482933"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mResident Create (5.1ms)[0m  [1m[32mINSERT INTO "residents" ("id", "user_id", "residential_unit_id", "start_date", "end_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["id", "e4a91614-a730-48a2-8c72-c81b77abb705"], ["user_id", "1989d138-3ab0-44c9-a7ee-cd7ba31c58a4"], ["residential_unit_id", "26aa5516-9334-493a-83c0-14b923abafeb"], ["start_date", "2022-10-10 23:50:08"], ["end_date", "2022-10-10 23:50:08"], ["created_at", "2022-11-25 06:38:09.502652"], ["updated_at", "2022-11-25 06:38:09.502652"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mStrataPlan Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "strata_plans" INNER JOIN "residential_units" ON "residential_units"."strata_plan_id" = "strata_plans"."id" INNER JOIN "residents" ON "residents"."residential_unit_id" = "residential_units"."id" INNER JOIN "users" ON "users"."id" = "residents"."user_id" WHERE "residents"."user_id" = ? AND "strata_plans"."id" = ? LIMIT ?[0m  [["user_id", "1989d138-3ab0-44c9-a7ee-cd7ba31c58a4"], ["id", "063da41b-95c1-4c5a-ab8c-bf91a16e07d6"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (13.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/residents/index" for 127.0.0.1 at 2022-11-25 06:38:09 +0000
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/residents/new" for 127.0.0.1 at 2022-11-25 06:38:09 +0000
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/residents/create" for 127.0.0.1 at 2022-11-25 06:38:09 +0000
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/strata_plans/new" for 127.0.0.1 at 2022-11-25 06:38:09 +0000
+Processing by StrataPlansController#new as HTML
+Completed 401 Unauthorized in 33ms (ActiveRecord: 0.0ms | Allocations: 1348)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStrataPlan Count (14.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "strata_plans"[0m
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStrataPlan Count (1.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "strata_plans"[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStrataPlan Create (8.2ms)[0m  [1m[32mINSERT INTO "strata_plans" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", "597a2b48-8fc8-4700-8a0d-fb3897d696d1"], ["name", nil], ["created_at", "2022-11-25 06:38:09.962585"], ["updated_at", "2022-11-25 06:38:09.962585"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering strata_plans/edit.html.erb
+  Rendered strata_plans/_form.html.erb (Duration: 7.9ms | Allocations: 891)
+  Rendered strata_plans/edit.html.erb (Duration: 28.7ms | Allocations: 1447)
+  [1m[36mTRANSACTION (6.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStrataPlan Create (7.9ms)[0m  [1m[32mINSERT INTO "strata_plans" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", "ae8c2ded-dedd-46f2-8b07-6d5adc0d5ae3"], ["name", nil], ["created_at", "2022-11-25 06:38:10.022834"], ["updated_at", "2022-11-25 06:38:10.022834"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStrataPlan Create (0.1ms)[0m  [1m[32mINSERT INTO "strata_plans" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", "32d2e50a-669f-488c-8c92-c1f3454d590b"], ["name", nil], ["created_at", "2022-11-25 06:38:10.033445"], ["updated_at", "2022-11-25 06:38:10.033445"]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering strata_plans/index.html.erb
+  Rendered strata_plans/_strata_plan.html.erb (Duration: 6.7ms | Allocations: 172)
+  Rendered strata_plans/_strata_plan.html.erb (Duration: 0.0ms | Allocations: 11)
+  Rendered strata_plans/index.html.erb (Duration: 30.6ms | Allocations: 1087)
+  [1m[36mTRANSACTION (6.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  Rendering strata_plans/new.html.erb
+  Rendered strata_plans/_form.html.erb (Duration: 1.0ms | Allocations: 419)
+  Rendered strata_plans/new.html.erb (Duration: 23.2ms | Allocations: 702)
+  [1m[36mTRANSACTION (5.7ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStrataPlan Create (51.2ms)[0m  [1m[32mINSERT INTO "strata_plans" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", "3a59154c-0777-4940-8651-2ba950bd57ba"], ["name", nil], ["created_at", "2022-11-25 06:38:10.225038"], ["updated_at", "2022-11-25 06:38:10.225038"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering strata_plans/show.html.erb
+  Rendered strata_plans/_strata_plan.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered strata_plans/show.html.erb (Duration: 11.7ms | Allocations: 277)
+  [1m[36mTRANSACTION (13.8ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStrataPlan Create (10.1ms)[0m  [1m[32mINSERT INTO "strata_plans" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", "aedb4151-5066-4556-b416-f95207699e27"], ["name", "MyString"], ["created_at", "2022-11-25 06:38:52.019213"], ["updated_at", "2022-11-25 06:38:52.019213"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "1@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (23.4ms)[0m  [1m[32mINSERT INTO "users" ("id", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "sign_in_count", "current_sign_in_at", "last_sign_in_at", "current_sign_in_ip", "last_sign_in_ip", "confirmation_token", "confirmed_at", "confirmation_sent_at", "unconfirmed_email", "failed_attempts", "unlock_token", "locked_at", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["id", "922d7dc7-9cf2-415c-855c-ef06fd331c81"], ["email", "1@example.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["sign_in_count", 0], ["current_sign_in_at", nil], ["last_sign_in_at", nil], ["current_sign_in_ip", nil], ["last_sign_in_ip", nil], ["confirmation_token", "[FILTERED]"], ["confirmed_at", nil], ["confirmation_sent_at", "2022-11-25 06:38:52.155469"], ["unconfirmed_email", nil], ["failed_attempts", 0], ["unlock_token", "[FILTERED]"], ["locked_at", nil], ["name", nil], ["created_at", "2022-11-25 06:38:52.155341"], ["updated_at", "2022-11-25 06:38:52.155341"]]
+  [1m[36mTRANSACTION (18.6ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (Duration: 17.1ms | Allocations: 944)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 259.8ms
+Delivered mail 638062fcb8070_915189503b@63301f5b8abf.mail (37.9ms)
+Date: Fri, 25 Nov 2022 06:38:52 +0000
+From: noreply@strata.herokuapp.com
+Reply-To: noreply@strata.herokuapp.com
+To: 1@example.com
+Message-ID: <638062fcb8070_915189503b@63301f5b8abf.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome 1@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=fwLP9zCwy7ggMJpbGUKh">Confirm my account</a></p>
+
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mResidentialUnit Create (2.6ms)[0m  [1m[32mINSERT INTO "residential_units" ("id", "name", "strata_plan_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["id", "6d4fcaab-5ef8-47f6-8104-b14e05e2adff"], ["name", "MyString"], ["strata_plan_id", "aedb4151-5066-4556-b416-f95207699e27"], ["created_at", "2022-11-25 06:38:52.827257"], ["updated_at", "2022-11-25 06:38:52.827257"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mResident Create (3.4ms)[0m  [1m[32mINSERT INTO "residents" ("id", "user_id", "residential_unit_id", "start_date", "end_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["id", "a23a78ed-1e6d-4702-ac30-ac7965088233"], ["user_id", "922d7dc7-9cf2-415c-855c-ef06fd331c81"], ["residential_unit_id", "6d4fcaab-5ef8-47f6-8104-b14e05e2adff"], ["start_date", "2022-10-10 23:50:08"], ["end_date", "2022-10-10 23:50:08"], ["created_at", "2022-11-25 06:38:52.840097"], ["updated_at", "2022-11-25 06:38:52.840097"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mStrataPlan Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "strata_plans" INNER JOIN "residential_units" ON "residential_units"."strata_plan_id" = "strata_plans"."id" INNER JOIN "residents" ON "residents"."residential_unit_id" = "residential_units"."id" INNER JOIN "users" ON "users"."id" = "residents"."user_id" WHERE "residents"."user_id" = ? AND "strata_plans"."id" = ? LIMIT ?[0m  [["user_id", "922d7dc7-9cf2-415c-855c-ef06fd331c81"], ["id", "aedb4151-5066-4556-b416-f95207699e27"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (10.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStrataPlan Create (39.1ms)[0m  [1m[32mINSERT INTO "strata_plans" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", "07962f0e-56e9-4867-82e3-dc7b55dd7c42"], ["name", nil], ["created_at", "2022-11-25 06:38:52.926438"], ["updated_at", "2022-11-25 06:38:52.926438"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/strata_plans/07962f0e-56e9-4867-82e3-dc7b55dd7c42/residents/index" for 127.0.0.1 at 2022-11-25 06:38:53 +0000
+  [1m[36mTRANSACTION (6.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/residents/new" for 127.0.0.1 at 2022-11-25 06:38:53 +0000
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/residents/create" for 127.0.0.1 at 2022-11-25 06:38:53 +0000
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/strata_plans/new" for 127.0.0.1 at 2022-11-25 06:38:53 +0000
+Processing by StrataPlansController#new as HTML
+Completed 401 Unauthorized in 43ms (ActiveRecord: 0.0ms | Allocations: 1348)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStrataPlan Count (2.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "strata_plans"[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStrataPlan Count (2.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "strata_plans"[0m
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (2.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStrataPlan Create (6.8ms)[0m  [1m[32mINSERT INTO "strata_plans" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", "1c79ec07-92ad-4fba-aa27-760ac7c33241"], ["name", nil], ["created_at", "2022-11-25 06:38:53.366179"], ["updated_at", "2022-11-25 06:38:53.366179"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering strata_plans/edit.html.erb
+  Rendered strata_plans/_form.html.erb (Duration: 9.9ms | Allocations: 891)
+  Rendered strata_plans/edit.html.erb (Duration: 40.4ms | Allocations: 1444)
+  [1m[36mTRANSACTION (7.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStrataPlan Create (8.2ms)[0m  [1m[32mINSERT INTO "strata_plans" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", "2dd96801-df14-42c2-9dff-5bf86d3bd3bf"], ["name", nil], ["created_at", "2022-11-25 06:38:53.443878"], ["updated_at", "2022-11-25 06:38:53.443878"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStrataPlan Create (0.2ms)[0m  [1m[32mINSERT INTO "strata_plans" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", "b7f7fa15-9bfc-4c7d-836a-170e7346e059"], ["name", nil], ["created_at", "2022-11-25 06:38:53.458473"], ["updated_at", "2022-11-25 06:38:53.458473"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering strata_plans/index.html.erb
+  Rendered strata_plans/_strata_plan.html.erb (Duration: 7.9ms | Allocations: 172)
+  Rendered strata_plans/_strata_plan.html.erb (Duration: 0.1ms | Allocations: 11)
+  Rendered strata_plans/index.html.erb (Duration: 83.6ms | Allocations: 1087)
+  [1m[36mTRANSACTION (6.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[36mbegin transaction[0m
+  Rendering strata_plans/new.html.erb
+  Rendered strata_plans/_form.html.erb (Duration: 4.6ms | Allocations: 419)
+  Rendered strata_plans/new.html.erb (Duration: 28.8ms | Allocations: 702)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStrataPlan Create (7.2ms)[0m  [1m[32mINSERT INTO "strata_plans" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", "6c656258-f4c0-47f6-98a4-93ac304de5da"], ["name", nil], ["created_at", "2022-11-25 06:38:53.735879"], ["updated_at", "2022-11-25 06:38:53.735879"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering strata_plans/show.html.erb
+  Rendered strata_plans/_strata_plan.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered strata_plans/show.html.erb (Duration: 28.9ms | Allocations: 277)
+  [1m[36mTRANSACTION (18.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStrataPlan Create (19.4ms)[0m  [1m[32mINSERT INTO "strata_plans" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", "927be9ff-eb04-4767-b76e-08bf538bb878"], ["name", "MyString"], ["created_at", "2022-11-25 06:39:42.035235"], ["updated_at", "2022-11-25 06:39:42.035235"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "1@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (3.2ms)[0m  [1m[32mINSERT INTO "users" ("id", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "sign_in_count", "current_sign_in_at", "last_sign_in_at", "current_sign_in_ip", "last_sign_in_ip", "confirmation_token", "confirmed_at", "confirmation_sent_at", "unconfirmed_email", "failed_attempts", "unlock_token", "locked_at", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["id", "2fe5c81c-63af-4dcc-85a1-f3275341b53a"], ["email", "1@example.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["sign_in_count", 0], ["current_sign_in_at", nil], ["last_sign_in_at", nil], ["current_sign_in_ip", nil], ["last_sign_in_ip", nil], ["confirmation_token", "[FILTERED]"], ["confirmed_at", nil], ["confirmation_sent_at", "2022-11-25 06:39:42.235519"], ["unconfirmed_email", nil], ["failed_attempts", 0], ["unlock_token", "[FILTERED]"], ["locked_at", nil], ["name", nil], ["created_at", "2022-11-25 06:39:42.235394"], ["updated_at", "2022-11-25 06:39:42.235394"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (Duration: 35.1ms | Allocations: 944)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 495.7ms
+Delivered mail 6380632ed1ea3_91518-43e@e3823ce17bb9.mail (34.8ms)
+Date: Fri, 25 Nov 2022 06:39:42 +0000
+From: noreply@strata.herokuapp.com
+Reply-To: noreply@strata.herokuapp.com
+To: 1@example.com
+Message-ID: <6380632ed1ea3_91518-43e@e3823ce17bb9.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome 1@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=mrAGUtDQ1rVtV8sMnn4x">Confirm my account</a></p>
+
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mResidentialUnit Create (3.5ms)[0m  [1m[32mINSERT INTO "residential_units" ("id", "name", "strata_plan_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["id", "bb863774-6aa9-46f6-b1db-14fb27756bf9"], ["name", "MyString"], ["strata_plan_id", "927be9ff-eb04-4767-b76e-08bf538bb878"], ["created_at", "2022-11-25 06:39:42.941327"], ["updated_at", "2022-11-25 06:39:42.941327"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mResident Create (4.6ms)[0m  [1m[32mINSERT INTO "residents" ("id", "user_id", "residential_unit_id", "start_date", "end_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["id", "6f5f0592-d8a4-4dd7-8836-e58bd789adbd"], ["user_id", "2fe5c81c-63af-4dcc-85a1-f3275341b53a"], ["residential_unit_id", "bb863774-6aa9-46f6-b1db-14fb27756bf9"], ["start_date", "2022-10-10 23:50:08"], ["end_date", "2022-10-10 23:50:08"], ["created_at", "2022-11-25 06:39:42.954993"], ["updated_at", "2022-11-25 06:39:42.954993"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mStrataPlan Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "strata_plans" INNER JOIN "residential_units" ON "residential_units"."strata_plan_id" = "strata_plans"."id" INNER JOIN "residents" ON "residents"."residential_unit_id" = "residential_units"."id" INNER JOIN "users" ON "users"."id" = "residents"."user_id" WHERE "residents"."user_id" = ? AND "strata_plans"."id" = ? LIMIT ?[0m  [["user_id", "2fe5c81c-63af-4dcc-85a1-f3275341b53a"], ["id", "927be9ff-eb04-4767-b76e-08bf538bb878"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (11.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStrataPlan Create (25.8ms)[0m  [1m[32mINSERT INTO "strata_plans" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", "57499d3f-ce58-4765-8705-82d59452e26b"], ["name", nil], ["created_at", "2022-11-25 06:39:43.098580"], ["updated_at", "2022-11-25 06:39:43.098580"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/strata_plan/57499d3f-ce58-4765-8705-82d59452e26b/residents/index" for 127.0.0.1 at 2022-11-25 06:39:43 +0000
+  [1m[36mTRANSACTION (33.6ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/residents/new" for 127.0.0.1 at 2022-11-25 06:39:43 +0000
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/residents/create" for 127.0.0.1 at 2022-11-25 06:39:43 +0000
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/strata_plans/new" for 127.0.0.1 at 2022-11-25 06:39:43 +0000
+Processing by StrataPlansController#new as HTML
+Completed 401 Unauthorized in 36ms (ActiveRecord: 0.0ms | Allocations: 1348)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStrataPlan Count (2.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "strata_plans"[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStrataPlan Count (2.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "strata_plans"[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStrataPlan Create (8.3ms)[0m  [1m[32mINSERT INTO "strata_plans" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", "c88558c1-438e-4607-9788-7d5330b69c44"], ["name", nil], ["created_at", "2022-11-25 06:39:43.449974"], ["updated_at", "2022-11-25 06:39:43.449974"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering strata_plans/edit.html.erb
+  Rendered strata_plans/_form.html.erb (Duration: 10.4ms | Allocations: 891)
+  Rendered strata_plans/edit.html.erb (Duration: 36.2ms | Allocations: 1444)
+  [1m[36mTRANSACTION (11.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (4.4ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStrataPlan Create (60.3ms)[0m  [1m[32mINSERT INTO "strata_plans" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", "179cc438-0f1c-4d26-ae5b-319b1aa8f4eb"], ["name", nil], ["created_at", "2022-11-25 06:39:43.532356"], ["updated_at", "2022-11-25 06:39:43.532356"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStrataPlan Create (0.1ms)[0m  [1m[32mINSERT INTO "strata_plans" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", "da0fd8a1-625c-4889-a112-ab7c87abcb1b"], ["name", nil], ["created_at", "2022-11-25 06:39:43.599922"], ["updated_at", "2022-11-25 06:39:43.599922"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering strata_plans/index.html.erb
+  Rendered strata_plans/_strata_plan.html.erb (Duration: 9.5ms | Allocations: 172)
+  Rendered strata_plans/_strata_plan.html.erb (Duration: 0.1ms | Allocations: 11)
+  Rendered strata_plans/index.html.erb (Duration: 89.2ms | Allocations: 1087)
+  [1m[36mTRANSACTION (9.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (4.0ms)[0m  [1m[36mbegin transaction[0m
+  Rendering strata_plans/new.html.erb
+  Rendered strata_plans/_form.html.erb (Duration: 4.5ms | Allocations: 419)
+  Rendered strata_plans/new.html.erb (Duration: 19.2ms | Allocations: 702)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStrataPlan Create (7.4ms)[0m  [1m[32mINSERT INTO "strata_plans" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", "d55b2a5e-8434-4d61-ad8f-097044a6115a"], ["name", nil], ["created_at", "2022-11-25 06:39:43.821607"], ["updated_at", "2022-11-25 06:39:43.821607"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering strata_plans/show.html.erb
+  Rendered strata_plans/_strata_plan.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered strata_plans/show.html.erb (Duration: 13.5ms | Allocations: 277)
+  [1m[36mTRANSACTION (10.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStrataPlan Create (7.8ms)[0m  [1m[32mINSERT INTO "strata_plans" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", "d1c8cd76-7fd1-46e6-acda-91a4e2c5a195"], ["name", "MyString"], ["created_at", "2022-11-25 23:55:29.079028"], ["updated_at", "2022-11-25 23:55:29.079028"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "1@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (5.2ms)[0m  [1m[32mINSERT INTO "users" ("id", "email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "sign_in_count", "current_sign_in_at", "last_sign_in_at", "current_sign_in_ip", "last_sign_in_ip", "confirmation_token", "confirmed_at", "confirmation_sent_at", "unconfirmed_email", "failed_attempts", "unlock_token", "locked_at", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["id", "5f4745ef-0ab2-4edd-a89f-8ad36d843fe8"], ["email", "1@example.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["sign_in_count", 0], ["current_sign_in_at", nil], ["last_sign_in_at", nil], ["current_sign_in_ip", nil], ["last_sign_in_ip", nil], ["confirmation_token", "[FILTERED]"], ["confirmed_at", nil], ["confirmation_sent_at", "2022-11-25 23:55:29.139372"], ["unconfirmed_email", nil], ["failed_attempts", 0], ["unlock_token", "[FILTERED]"], ["locked_at", nil], ["name", nil], ["created_at", "2022-11-25 23:55:29.139126"], ["updated_at", "2022-11-25 23:55:29.139126"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering devise/mailer/confirmation_instructions.html.erb
+  Rendered devise/mailer/confirmation_instructions.html.erb (Duration: 24.0ms | Allocations: 1131)
+Devise::Mailer#confirmation_instructions: processed outbound mail in 406.3ms
+Delivered mail 638155f194c96_915e0326f5@5968e23e2636.mail (7.9ms)
+Date: Fri, 25 Nov 2022 23:55:29 +0000
+From: noreply@strata.herokuapp.com
+Reply-To: noreply@strata.herokuapp.com
+To: 1@example.com
+Message-ID: <638155f194c96_915e0326f5@5968e23e2636.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome 1@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=iRS9owXamB41VQRzMvm3">Confirm my account</a></p>
+
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mResidentialUnit Create (5.3ms)[0m  [1m[32mINSERT INTO "residential_units" ("id", "name", "strata_plan_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["id", "84fb2021-ed08-4204-827f-f66b1ac62701"], ["name", "MyString"], ["strata_plan_id", "d1c8cd76-7fd1-46e6-acda-91a4e2c5a195"], ["created_at", "2022-11-25 23:55:29.633849"], ["updated_at", "2022-11-25 23:55:29.633849"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mResident Create (6.9ms)[0m  [1m[32mINSERT INTO "residents" ("id", "user_id", "residential_unit_id", "start_date", "end_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["id", "556958ed-4463-44c8-a0a6-11ee46c78e7e"], ["user_id", "5f4745ef-0ab2-4edd-a89f-8ad36d843fe8"], ["residential_unit_id", "84fb2021-ed08-4204-827f-f66b1ac62701"], ["start_date", "2022-10-10 23:50:08"], ["end_date", "2022-10-10 23:50:08"], ["created_at", "2022-11-25 23:55:29.661875"], ["updated_at", "2022-11-25 23:55:29.661875"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mStrataPlan Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "strata_plans" INNER JOIN "residential_units" ON "residential_units"."strata_plan_id" = "strata_plans"."id" INNER JOIN "residents" ON "residents"."residential_unit_id" = "residential_units"."id" INNER JOIN "users" ON "users"."id" = "residents"."user_id" WHERE "residents"."user_id" = ? AND "strata_plans"."id" = ? LIMIT ?[0m  [["user_id", "5f4745ef-0ab2-4edd-a89f-8ad36d843fe8"], ["id", "d1c8cd76-7fd1-46e6-acda-91a4e2c5a195"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (18.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStrataPlan Create (10.8ms)[0m  [1m[32mINSERT INTO "strata_plans" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", "479812ce-f6e1-4774-adaa-c03ba49b2ef1"], ["name", nil], ["created_at", "2022-11-25 23:55:29.712531"], ["updated_at", "2022-11-25 23:55:29.712531"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/strata_plans/479812ce-f6e1-4774-adaa-c03ba49b2ef1/residents" for 127.0.0.1 at 2022-11-25 23:55:29 +0000
+Processing by ResidentsController#index as HTML
+  Parameters: {"strata_plan_id"=>"479812ce-f6e1-4774-adaa-c03ba49b2ef1"}
+Completed 401 Unauthorized in 105ms (ActiveRecord: 0.0ms | Allocations: 1611)
+  [1m[36mTRANSACTION (14.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/residents/new" for 127.0.0.1 at 2022-11-25 23:55:29 +0000
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/residents/create" for 127.0.0.1 at 2022-11-25 23:55:30 +0000
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+Started GET "/strata_plans/new" for 127.0.0.1 at 2022-11-25 23:55:30 +0000
+Processing by StrataPlansController#new as HTML
+Completed 401 Unauthorized in 22ms (ActiveRecord: 0.0ms | Allocations: 336)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStrataPlan Count (2.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "strata_plans"[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mStrataPlan Count (1.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "strata_plans"[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStrataPlan Create (7.7ms)[0m  [1m[32mINSERT INTO "strata_plans" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", "2592008b-d2ed-4460-9aa7-d31b60e52299"], ["name", nil], ["created_at", "2022-11-25 23:55:30.156463"], ["updated_at", "2022-11-25 23:55:30.156463"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering strata_plans/edit.html.erb
+  Rendered strata_plans/_form.html.erb (Duration: 25.0ms | Allocations: 891)
+  Rendered strata_plans/edit.html.erb (Duration: 64.5ms | Allocations: 1447)
+  [1m[36mTRANSACTION (6.9ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStrataPlan Create (6.5ms)[0m  [1m[32mINSERT INTO "strata_plans" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", "dacf08c0-b263-4d3d-8c63-aeb36e123b5a"], ["name", nil], ["created_at", "2022-11-25 23:55:30.255560"], ["updated_at", "2022-11-25 23:55:30.255560"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStrataPlan Create (0.2ms)[0m  [1m[32mINSERT INTO "strata_plans" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", "56575c62-9306-48ed-87a5-2c683215efcc"], ["name", nil], ["created_at", "2022-11-25 23:55:30.265259"], ["updated_at", "2022-11-25 23:55:30.265259"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering strata_plans/index.html.erb
+  Rendered strata_plans/_strata_plan.html.erb (Duration: 13.6ms | Allocations: 172)
+  Rendered strata_plans/_strata_plan.html.erb (Duration: 0.1ms | Allocations: 11)
+  Rendered strata_plans/index.html.erb (Duration: 50.7ms | Allocations: 1132)
+  [1m[36mTRANSACTION (6.8ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  Rendering strata_plans/new.html.erb
+  Rendered strata_plans/_form.html.erb (Duration: 1.2ms | Allocations: 419)
+  Rendered strata_plans/new.html.erb (Duration: 23.3ms | Allocations: 702)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mStrataPlan Create (16.0ms)[0m  [1m[32mINSERT INTO "strata_plans" ("id", "name", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["id", "354e5e65-e42a-4b97-a798-9b34c4cafb91"], ["name", nil], ["created_at", "2022-11-25 23:55:30.385593"], ["updated_at", "2022-11-25 23:55:30.385593"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  Rendering strata_plans/show.html.erb
+  Rendered strata_plans/_strata_plan.html.erb (Duration: 0.2ms | Allocations: 23)
+  Rendered strata_plans/show.html.erb (Duration: 15.0ms | Allocations: 277)
+  [1m[36mTRANSACTION (7.1ms)[0m  [1m[31mrollback transaction[0m

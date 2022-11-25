@@ -1,0 +1,11 @@
+<div>
+  <ul>
+    <% @residents.each do |r| %>
+      <li><%= r.email %> (<%= r.residential_unit.name %>)</li>
+    <% end %>
+  </ul>
+</div>
+
+<div>
+  <%= link_to "Add new", new_strata_plan_resident_url(@strata_plan) %>
+</div>
