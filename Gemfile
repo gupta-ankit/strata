@@ -82,3 +82,5 @@ gem "devise", "~> 4.8"
 gem "simplecov", "~> 0.21.2", require: false, :group => :test
 
 gem "simplecov-console", "~> 0.9.1", :group => :test
+
+gem "annotate", "~> 3.2", :group => :development
