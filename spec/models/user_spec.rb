@@ -27,13 +27,19 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
+  let(:plan) { create(:strata_plan) }
+  let(:user) { create(:user) }
+
   describe "#strata_plans" do
     it 'returns strata plans where the user is a resident' do
-      plan = create(:strata_plan)
-      user = create(:user)
       residential_unit = create(:residential_unit, strata_plan: plan)
-      resident = create(:resident, user: user, residential_unit: residential_unit)
+      create(:resident, user: user, residential_unit: residential_unit)
 
+      expect(user.strata_plans).to include(plan)
+    end
+
+    it 'returns strata plans where the user is an admin' do
+      create(:strata_admin, user: user, strata_plan: plan)
       expect(user.strata_plans).to include(plan)
     end
   end

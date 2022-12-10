@@ -1,11 +1,10 @@
 Rails.application.routes.draw do
   resources :chat_messages
-  resources :residents, only: [:index, :new, :create]
 
   resources :strata_plans do
     resources :chat_rooms
     resources :issues
-    get 'residents', to: 'residents#index'
+    resources :residents, only: [:index, :new, :create]
   end
 
   devise_for :users, controllers: {

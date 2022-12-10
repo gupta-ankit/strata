@@ -31,9 +31,10 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable, :confirmable, :lockable, :trackable
 
   has_many :issues, foreign_key: :reporter_id
-  
+
   def strata_plans
-    StrataPlan.joins(residential_units: {residents: [:user]}).where(residents: {user_id: id})
+    StrataPlan.joins(residential_units: { residents: [:user] }, strata_admins: [:user])
+              .where('residents.user_id = ? or strata_admins.user_id = ?', id, id).distinct
   end
 
   def issues_for(strata_plan)

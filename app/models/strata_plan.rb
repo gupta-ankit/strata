@@ -10,8 +10,9 @@
 class StrataPlan < ApplicationRecord
   has_many :residential_units
   has_many :chat_rooms
+  has_many :strata_admins
 
   def residents
-    Resident.includes(:residential_unit, :user).where(residential_unit: {strata_plan_id: id})
+    Resident.includes(:residential_unit, :user).where(residential_unit: { strata_plan_id: id })
   end
 end

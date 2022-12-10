@@ -1,8 +1,19 @@
-
-<%= form_with model: @resident do |f| %>
-   <div>
-     <%= f.text_field :email %>
-   </div>
+<div>
+  <ul>
+    <% @resident.errors.full_messages.each do |m| %>
+      <li><%= m %></li>
+    <% end %>
+  </ul>
+</div>
+<%= form_with model: [@strata_plan, @resident] do |f| %>
+  <div>
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+  </div>
+  <div>
+    <%= f.label :residential_unit %>
+    <%= f.select :residential_unit_id, @residential_units.collect { |r| [r.name, r.id] } %>
+  </div>
   <div>
     <%= f.submit "Add" %>
   </div>
