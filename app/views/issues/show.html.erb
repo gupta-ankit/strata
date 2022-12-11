@@ -4,10 +4,13 @@
   </p>
   <div class="images">
     <% @issue.images.each do |im| %>
-    <%= image_tag im, class: "image" %>
+      <%= image_tag im, class: "image" %>
     <% end %>
   </div>
   <div class="reporter">
     reported by: <%= @issue.reporter.name %>
   </div>
 </div>
+
+<%= render template: 'comments/new' %>
+<%= render partial: 'comments/index', locals: { commentable: @issue } %>

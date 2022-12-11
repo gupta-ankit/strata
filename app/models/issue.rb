@@ -14,4 +14,6 @@ class Issue < ApplicationRecord
 
   has_rich_text :content
   has_many_attached :images
+
+  has_many :comments, as: :commentable, dependent: :destroy
 end

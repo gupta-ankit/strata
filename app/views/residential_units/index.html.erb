@@ -1,0 +1,9 @@
+<ul>
+  <% @residential_units.each do |r| %>
+    <li><%= r.name %></li>
+  <% end %>
+</ul>
+
+<div>
+  <%= link_to "Add", new_strata_plan_residential_unit_path(@strata_plan) %>
+</div>

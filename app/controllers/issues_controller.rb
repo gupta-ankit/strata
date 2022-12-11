@@ -23,6 +23,9 @@ class IssuesController < ApplicationController
 
   def show
     @issue = current_user.issues_for(@strata_plan).find(params[:id])
+    @commentable = @issue
+    @comment = Comment.new
+    @comment_path = issue_comment_path(@issue)
   end
 
   private

@@ -23,6 +23,7 @@ class ResidentsController < ApplicationController
     )
 
     if @resident.persisted?
+      redirect_to strata_plan_residents_path(@strata_plan)
     else
       render :new, status: :unprocessable_entity
     end
