@@ -17,3 +17,22 @@ services:
       - "3000:3000"
     depends_on:
       - db
+  db_test:
+    image: postgres
+    environment:
+      POSTGRES_DB: "db"
+      POSTGRES_HOST_AUTH_METHOD: "trust"
+    volumes:
+      - ./tmp/db_test:/var/lib/postgresql/data
+  test:
+    tty: true
+    stdin_open: true
+    build: .
+    volumes:
+      - .:/app
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db_test
+    environment:
+      - RAILS_ENV=test

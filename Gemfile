@@ -71,18 +71,18 @@ group :test do
   gem "webdrivers"
 end
 
-gem "sqlite3", "~> 1.5", :groups => [:test, :development]
-
-gem "rspec", "~> 3.11", :groups => [:development, :test]
-gem "rspec-rails", "~> 6.0", :groups => [:development, :test]
-gem "factory_bot_rails", "~> 6.2", :groups => [:development, :test]
-
 gem "devise", "~> 4.8"
 
-gem "simplecov", "~> 0.21.2", require: false, :group => :test
+group :test, :development do
+  gem "rspec", "~> 3.11"
+  gem "rspec-rails", "~> 6.0"
+  gem "factory_bot_rails", "~> 6.2"
 
-gem "simplecov-console", "~> 0.9.1", :group => :test
+  gem "simplecov", "~> 0.21.2"
+  gem "simplecov-console", "~> 0.9.1"
+  gem "annotate", "~> 3.2"
+end
 
-gem "annotate", "~> 3.2", :group => :development
+
 
 gem "lograge", "~> 0.12.0"

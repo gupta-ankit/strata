@@ -9,6 +9,8 @@
 #  updated_at     :datetime         not null
 #
 class Issue < ApplicationRecord
+  before_validation :set_default_status
+
   enum status: { reported: "reported", in_progress: "in_progress", done: "done"}, _prefix: :status
 
   belongs_to :strata_plan
@@ -18,4 +20,8 @@ class Issue < ApplicationRecord
   has_many_attached :images
 
   has_many :comments, as: :commentable, dependent: :destroy
+
+  def set_default_status
+    self.status ||= "reported"
+  end
 end
