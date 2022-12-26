@@ -9,6 +9,8 @@
 #  updated_at     :datetime         not null
 #
 class Issue < ApplicationRecord
+  enum status: { reported: "reported", in_progress: "in_progress", done: "done"}, _prefix: :status
+
   belongs_to :strata_plan
   belongs_to :reporter, class_name: 'User', foreign_key: 'reporter_id'
 
