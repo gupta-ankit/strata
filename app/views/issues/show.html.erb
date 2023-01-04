@@ -1,16 +1,33 @@
+<%= form_with model: [@strata_plan, @issue] do |f| %>
+  <%= f.select :status,
+               options_for_select(
+                 Issue.statuses.map { |k, v| [k.humanize.capitalize, v] }, @issue.status) %>
+  <%= f.rich_text_area :content %>
+  <div class="reporter">
+    reported by: <%= @issue.reporter.name %>
+  </div>
+  <%= f.submit %>
+<% end %>
+
+
+
 <div class="issue">
-  <p class="description">
-    <%= @issue.content %>
-  </p>
   <div class="images">
     <% @issue.images.each do |im| %>
       <%= image_tag im, class: "image" %>
     <% end %>
   </div>
-  <div class="reporter">
-    reported by: <%= @issue.reporter.name %>
+</div>
+
+<div>
+  <div>
+    <%= render partial: 'comments/index', locals: { commentable: @issue } %>
+  </div>
+  <div>
+    <%= render template: 'comments/new' %>
   </div>
 </div>
 
-<%= render template: 'comments/new' %>
-<%= render partial: 'comments/index', locals: { commentable: @issue } %>
+<script>
+
+</script>

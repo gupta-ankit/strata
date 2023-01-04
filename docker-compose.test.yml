@@ -1,13 +1,13 @@
 version: '3'
 services:
-  db:
+  db_test:
     image: postgres
-    environment:      
+    environment:
       POSTGRES_DB: "db"
       POSTGRES_HOST_AUTH_METHOD: "trust"
     volumes:
-      - ./tmp/db:/var/lib/postgresql/data
-  web:
+      - ./tmp/db_test:/var/lib/postgresql/data
+  test:
     tty: true
     stdin_open: true
     build: .
@@ -16,4 +16,6 @@ services:
     ports:
       - "3000:3000"
     depends_on:
-      - db
+      - db_test
+    environment:
+      - RAILS_ENV=test

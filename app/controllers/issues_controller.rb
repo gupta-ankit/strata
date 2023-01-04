@@ -21,6 +21,17 @@ class IssuesController < ApplicationController
     end
   end
 
+  def update
+    @issue = current_user.issues_for(@strata_plan).find(params[:id])
+    @issue.status = params[:issue][:status]
+    @issue.content = params[:issue][:content]
+    if @issue.save!
+      flash[:notice] = "Issued updated successfully"
+    else
+      flash[:error] = "Issue could not be updated"
+    end
+  end
+
   def show
     @issue = current_user.issues_for(@strata_plan).find(params[:id])
     @commentable = @issue
